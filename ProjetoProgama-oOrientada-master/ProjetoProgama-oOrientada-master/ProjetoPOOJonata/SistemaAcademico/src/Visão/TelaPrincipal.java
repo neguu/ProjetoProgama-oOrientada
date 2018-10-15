@@ -27,7 +27,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BarraMenu = new javax.swing.JMenuBar();
+        jMenuBar1 = new javax.swing.JMenuBar();
         cadastros = new javax.swing.JMenu();
         alterarCadastro = new javax.swing.JMenu();
         diario = new javax.swing.JMenu();
@@ -38,16 +38,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setTitle("Sistema- Tela Principal");
 
         cadastros.setText("Cadastros ");
-        BarraMenu.add(cadastros);
+        jMenuBar1.add(cadastros);
 
         alterarCadastro.setText("Alterar Cadastro ");
-        BarraMenu.add(alterarCadastro);
+        jMenuBar1.add(alterarCadastro);
 
         diario.setText("Diario");
-        BarraMenu.add(diario);
+        jMenuBar1.add(diario);
 
         disciplinas.setText("Disciplinas");
-        BarraMenu.add(disciplinas);
+        jMenuBar1.add(disciplinas);
 
         Sair.setText("sair");
         Sair.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -55,9 +55,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 SairMouseClicked(evt);
             }
         });
-        BarraMenu.add(Sair);
+        jMenuBar1.add(Sair);
 
-        setJMenuBar(BarraMenu);
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -114,11 +114,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar BarraMenu;
     private javax.swing.JMenu Sair;
     private javax.swing.JMenu alterarCadastro;
     private javax.swing.JMenu cadastros;
     private javax.swing.JMenu diario;
     private javax.swing.JMenu disciplinas;
+    private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }

@@ -37,9 +37,6 @@ public class telaLogin extends javax.swing.JFrame {
         Sair = new javax.swing.JButton();
         cadastrar = new javax.swing.JButton();
         ImagemIF = new javax.swing.JLabel();
-        Aluno = new javax.swing.JRadioButton();
-        Professor = new javax.swing.JRadioButton();
-        Funcionário = new javax.swing.JRadioButton();
         PlanoDFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -87,7 +84,6 @@ public class telaLogin extends javax.swing.JFrame {
         getContentPane().add(Sair);
         Sair.setBounds(270, 510, 190, 40);
 
-        cadastrar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         cadastrar.setText("Cadastrar");
         cadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,38 +91,11 @@ public class telaLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cadastrar);
-        cadastrar.setBounds(170, 670, 130, 27);
+        cadastrar.setBounds(200, 590, 90, 23);
 
         ImagemIF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/gif.gif"))); // NOI18N
         getContentPane().add(ImagemIF);
         ImagemIF.setBounds(80, 40, 350, 290);
-
-        Aluno.setText("Aluno");
-        Aluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AlunoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Aluno);
-        Aluno.setBounds(50, 580, 53, 23);
-
-        Professor.setText("Professor");
-        Professor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ProfessorActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Professor);
-        Professor.setBounds(330, 580, 71, 23);
-
-        Funcionário.setText("Funcionário");
-        Funcionário.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FuncionárioActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Funcionário);
-        Funcionário.setBounds(180, 580, 81, 23);
 
         PlanoDFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/login.jpg"))); // NOI18N
         getContentPane().add(PlanoDFundo);
@@ -160,24 +129,10 @@ public class telaLogin extends javax.swing.JFrame {
 
     private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
        
-        TelaCadastro t = new TelaCadastro();
-        t.setVisible(true);
-        dispose();
+        TelaCadastro TC = new TelaCadastro();
+            TC.setVisible(true);
+            dispose();
     }//GEN-LAST:event_cadastrarActionPerformed
-
-    private void AlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlunoActionPerformed
-        // TODO add your handling code here:
-        
-        Aluno.setSelected(false);
-    }//GEN-LAST:event_AlunoActionPerformed
-
-    private void FuncionárioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FuncionárioActionPerformed
-           Funcionário.setSelected(false);
-    }//GEN-LAST:event_FuncionárioActionPerformed
-
-    private void ProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfessorActionPerformed
-        Professor.setSelected(false);
-    }//GEN-LAST:event_ProfessorActionPerformed
 
     
     public static void main(String args[]) {
@@ -213,12 +168,9 @@ public class telaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton Aluno;
-    private javax.swing.JRadioButton Funcionário;
     private javax.swing.JLabel ImagemIF;
     private javax.swing.JTextField NomeUsuario;
     private javax.swing.JLabel PlanoDFundo;
-    private javax.swing.JRadioButton Professor;
     private javax.swing.JButton Sair;
     private javax.swing.JPasswordField SenhaDoUsuario;
     private javax.swing.JLabel SenhaText;

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <BindingProperties>
+    <BindingProperty name="defaultCloseOperation" source="buttonGroup1" target="Form" targetPath="defaultCloseOperation" updateStrategy="0" immediately="false"/>
+  </BindingProperties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
@@ -20,22 +23,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="TelaCadastro" min="-2" pref="728" max="-2" attributes="0"/>
+          <EmptySpace min="0" pref="736" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="TelaCadastro" min="-2" pref="728" max="-2" attributes="0"/>
+          <EmptySpace min="0" pref="494" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
-  <SubComponents>
-    <Component class="javax.swing.JLabel" name="TelaCadastro">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagens/telaCadastro.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-  </SubComponents>
 </Form>
