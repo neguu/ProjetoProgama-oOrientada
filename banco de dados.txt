@@ -1,0 +1,62 @@
+ALTER TABLE diario
+add COLUMN nota4 int ;
+
+ALTER TABLE diario
+add COLUMN nota3 int ;
+
+ALTER TABLE diario
+add COLUMN nota2 int ;
+
+ALTER TABLE diario
+add COLUMN nota1 int ;
+
+
+
+create table diario (
+
+professor int,
+aluno int,
+foreing key (professor) references professor(matricula);
+foreing key (aluno) references aluno(matricula);
+);
+
+
+create table aluno(
+
+nome varchar(50);
+email varchar(50);
+login varchar(50);
+senha varchar(50);
+cpf int;
+ano int ;
+matricula int ;
+)
+
+create table professor(
+
+nome varchar(50);
+email varchar(50);
+login varchar(50);
+senha varchar(50);
+cpf int;
+Disciplina varchar(50);
+matricula int ;
+)
+
+create table tecnico(
+
+nome varchar(50);
+email varchar(50);
+login varchar(50);
+senha varchar(50);
+cpf int;
+matricula int ;
+
+
+)
+
+
+
+
+
+ 
