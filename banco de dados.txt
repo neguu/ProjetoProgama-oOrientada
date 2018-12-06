@@ -1,6 +1,13 @@
 ALTER TABLE aluno
 add COLUMN telefone varchar(9);
 
+ALTER TABLE professor
+add COLUMN telefone varchar(9);
+
+ALTER TABLE tecnico
+add COLUMN telefone varchar(9);
+
+
 ALTER TABLE diario
 add COLUMN nota4 int ;
 
