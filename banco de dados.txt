@@ -16,47 +16,40 @@ create table diario (
 
 professor int,
 aluno int,
-foreing key (professor) references professor(matricula);
-foreing key (aluno) references aluno(matricula);
+foreign key (professor) references professor(matricula),
+foreign key (aluno) references aluno(matricula)
 );
 
 
 create table aluno(
 
-nome varchar(50);
-email varchar(50);
-login varchar(50);
-senha varchar(50);
-cpf int;
-ano int ;
-matricula int ;
-)
+nome varchar(50),
+email varchar(50),
+login varchar(50),
+senha varchar(50),
+cpf int,
+ano int ,
+matricula int not null primary key 
+); 
 
 create table professor(
 
-nome varchar(50);
-email varchar(50);
-login varchar(50);
-senha varchar(50);
-cpf int;
-Disciplina varchar(50);
-matricula int ;
-)
+nome varchar(50),
+email varchar(50),
+login varchar(50),
+senha varchar(50),
+cpf int,
+Disciplina varchar(50),
+matricula int not null primary key
+);
 
 create table tecnico(
 
-nome varchar(50);
-email varchar(50);
-login varchar(50);
-senha varchar(50);
-cpf int;
-matricula int ;
+nome varchar(50),
+email varchar(50),
+login varchar(50),
+senha varchar(50),
+cpf int,
+matricula int not null primary key
+);
 
-
-)
-
-
-
-
-
- 
