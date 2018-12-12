@@ -1,37 +1,3 @@
-ALTER TABLE aluno
-add COLUMN telefone varchar(9);
-
-ALTER TABLE professor
-add COLUMN telefone varchar(9);
-
-ALTER TABLE tecnico
-add COLUMN telefone varchar(9);
-
-
-ALTER TABLE diario
-add COLUMN nota4 int ;
-
-ALTER TABLE diario
-add COLUMN nota3 int ;
-
-ALTER TABLE diario
-add COLUMN nota2 int ;
-
-ALTER TABLE diario
-add COLUMN nota1 int ;
-
-
-
-create table diario (
-
-professor int,
-aluno int,
-foreign key (professor) references professor(matricula),
-foreign key (aluno) references aluno(matricula)
-);
-
-
-
 create table aluno(
 
 nome varchar(50),
@@ -66,5 +32,32 @@ cpf int,
 matricula int not null primary key
 );
 
+create table diario (
+
+professor int,
+aluno int,
+foreign key (professor) references professor(matricula),
+foreign key (aluno) references aluno(matricula)
+);
+
+ALTER TABLE aluno
+add COLUMN telefone varchar(9);
+
+ALTER TABLE professor
+add COLUMN telefone varchar(9);
+
+ALTER TABLE tecnico
+add COLUMN telefone varchar(9);
 
 
+ALTER TABLE diario
+add COLUMN nota4 int ;
+
+ALTER TABLE diario
+add COLUMN nota3 int ;
+
+ALTER TABLE diario
+add COLUMN nota2 int ;
+
+ALTER TABLE diario
+add COLUMN nota1 int ;
