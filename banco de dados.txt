@@ -29,7 +29,7 @@ aluno int,
 foreign key (professor) references professor(matricula),
 foreign key (aluno) references aluno(matricula)
 );
-select * from diario
+
 
 
 create table aluno(
@@ -42,7 +42,7 @@ cpf int,
 ano int ,
 matricula int not null primary key 
 ); 
-select * from aluno
+
 
 create table professor(
 
@@ -54,7 +54,7 @@ cpf int,
 Disciplina varchar(50),
 matricula int not null primary key
 );
-select * from professor
+
 
 create table tecnico(
 
@@ -65,5 +65,6 @@ senha varchar(50),
 cpf int,
 matricula int not null primary key
 );
-select * from tecnico
+
+
 
